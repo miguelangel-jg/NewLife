@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+} 
+:root{
+    --primary-color: #c800a1;
+    --gray-color: #54595F;
+    --ligth-gray: #b5b5b5;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.header__link{
+    padding: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.main__title,
+.content__title{
+    color: var(--primary-color);
+    margin: 20px 0 20px 0;
+}
+    
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title{
+    color: var(--primary-color);
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+    
+.aside{
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+.form__content{
+    display: flex;
+    flex-direction: column;
+}
+.form__content label input, .form__content label textarea{
+    width: 100%;
+    background-color: var(--ligth-gray);
+    margin-top: 10px;
+    border: none;
+}
+.form__content label textarea{
+    height: 100px;
+}
+.form__btn{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border:  none;
+    border-radius: 10px;
+    color: white;
+}
+
+.footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #54595F;
+}
+.footerItem__title{
+    color: var(--primary-color);
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
