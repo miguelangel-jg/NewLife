@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +12,10 @@ body{
 :root{
     --primary-color: #c800a1;
     --gray-color: #54595F;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
 }
 .header{
     display: flex;
@@ -40,7 +46,8 @@ body{
     align-items: center;
 }
 .content__p{
-    text-align: center;
+    margin-top: 1.3rem;
+    font-size: 18px;
 }
 .content__gallery{
     max-width: 1200px;
@@ -54,8 +61,9 @@ body{
 }
 .content__title{
     color: var(--primary-color);
-    margin: 20px 0 20px  0;
+    text-align: center;
 }
+
 .aside__banner{
     background-image: url(../img/nubes.webp);
     background-size: cover;
@@ -96,6 +104,7 @@ body{
 .aside__p, .asideBanner__title{
     color: white;
     margin-top: 20px;
+    font-size: 20px;
 }
 .asideBanner__button{
     background-color: transparent;
@@ -103,7 +112,15 @@ body{
     padding: 10px;
     border-radius: 30px;
     margin-top: 20px;
+    color: white;
 }
+
+.asideBanner__button:hover{
+    background-color: white;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
 .aside__item{
     border: 1px solid black;
     margin: 20px;
@@ -135,6 +152,7 @@ body{
 
 .footer{
     background-color: #54595F;
+    padding: 10px;
 }
 .footerItem__title{
     color: var(--primary-color);
@@ -143,4 +161,59 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+
+
+/* Media Querys */
+
+
+
+@media screen and (max-width: 568px) { 
+    .header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navigation{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 768px) { 
+    .header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .content__gallery{
+        padding: 15px;
+    }
+    .content__p{
+        text-align: start;
+    }
+
+    .aside__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aside__item{
+        width: 90%;
+
+    }
+
+    .asideItem__p{
+        font-size: 16px;
+    }
+
+    .footer_container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem
+        ;
+    }
 }
