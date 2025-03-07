@@ -10,7 +10,7 @@ body{
     font-family: "Roboto", sans-serif;
 }
 :root{
-    --primary-color: #c800a1;
+    --primary-color: #efb3e3;
     --gray-color: #54595F;
 }
 
@@ -23,6 +23,20 @@ h1,h2,h3,h4,h5,h6{
     padding: 20px;
 }
 
+.header__image{
+    width: 100px;   
+}
+
+.header__figure{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.nombre{
+    color: var(--primary-color);
+}
 .navigation{
     display: flex;
     align-items: center;
