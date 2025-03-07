@@ -9,7 +9,7 @@ body{
     height: 100vh;
 } 
 :root{
-    --primary-color: #c800a1;
+    --primary-color: #efb3e3;
     --gray-color: #54595F;
     --ligth-gray: #b5b5b5;
 }
@@ -19,14 +19,35 @@ body{
     padding: 20px;
 }
 
+.header__image{
+    width: 100px;   
+}
+.header__figure{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.header a{
+    font-size: 20px;
+}
+
+
+.nombre{
+    color: var(--primary-color);
+}
+
 .navigation{
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 .header__link{
     padding: 10px;
     color: var(--primary-color);
     text-decoration: none;
+}
+.header__link:hover{
+    text-decoration: underline;
 }
 .main__title,
 .content__title{
@@ -84,19 +105,69 @@ body{
     color: white;
 }
 
-.footer{
-    bottom: 0;
-    width: 100%;
-    background-color: #54595F;
+.footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 40px 0;
+    text-align: center;
 }
-.footerItem__title{
-    color: var(--primary-color);
-}
-.footer_container{
+
+.footer_container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+.footer__item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footerItem__title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #E74C3C;
+}
+
+.footer__content {
+    font-size: 1rem;
+}
+
+.footer__p {
+    margin: 5px 0;
+    color: #BDC3C7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__p:hover {
+    color: #E74C3C;
+}
+
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #BDC3C7;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #E74C3C;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .footer_container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 568px) { 
     .header{

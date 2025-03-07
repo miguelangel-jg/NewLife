@@ -33,6 +33,10 @@ h1,h2,h3,h4,h5,h6{
     gap: 2rem;
 }
 
+.header a{
+    font-size: 20px;
+}
+
 
 .nombre{
     color: var(--primary-color);
@@ -49,7 +53,6 @@ h1,h2,h3,h4,h5,h6{
 }
 .header__link:hover{
     text-decoration: underline;
-    font-size: 1.1rem;
 }
 
 .banner__image{width: 100%;}
@@ -79,7 +82,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .aside__banner{
-    background-image: url(../img/nubes.webp);
+    background-image: url(../img/rosa.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -116,17 +119,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .aside__p, .asideBanner__title{
-    color: white;
+    color: var(--gray-color);
     margin-top: 20px;
     font-size: 20px;
 }
 .asideBanner__button{
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid var(--gray-color);
     padding: 10px;
     border-radius: 30px;
     margin-top: 20px;
-    color: white;
+    color: var(--gray-color);
 }
 
 .asideBanner__button:hover{
@@ -164,20 +167,60 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
 }
 
-.footer{
-    background-color: #54595F;
-    padding: 10px;
+.footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 40px 0;
+    text-align: center;
 }
-.footerItem__title{
-    color: var(--primary-color);
-}
-.footer_container{
+
+.footer_container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
+.footer__item {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
 
+.footerItem__title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #E74C3C;
+}
+
+.footer__content {
+    font-size: 1rem;
+}
+
+.footer__p {
+    margin: 5px 0;
+    color: #BDC3C7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__p:hover {
+    color: #E74C3C;
+}
+
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: #BDC3C7;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #E74C3C;
+}
 
 /* Media Querys */
 

@@ -33,26 +33,16 @@ h1,h2,h3,h4,h5,h6{
     gap: 2rem;
 }
 
-.asideContent__title{
-    color: var(--primary-color);
-    margin: 2rem 0;
-}
+
 .nombre{
     color: var(--primary-color);
     text-decoration: none;
 }
 
-.header a{
-    font-size: 20px;
-}
-
-.header a{
-    font-size: 20px;
-}
-
 .nombre:hover{
     text-decoration: underline;
 }
+
 .navigation{
     display: flex;
     align-items: center;
@@ -65,15 +55,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .header__link:hover{
     text-decoration: underline;
-
 }
 
-.banner__figure{
-    background-image: url(../img/metodoRopa.webp);
-    background-size: cover;
-    height: 700px;
-    background-position: center;
-}
 .banner__image{width: 100%;}
 .main__content{
     display: flex;
@@ -83,117 +66,67 @@ h1,h2,h3,h4,h5,h6{
 }
 .content__p{
     margin-top: 1.3rem;
-    font-size: 18px;
+    font-size: 22px;
 }
 .content__gallery{
     max-width: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 20px 0 3rem 0;
-}
-.content__title{
-    color: var(--primary-color); 
-    margin-top: 3rem;
-    text-align: start;
-    font-size: 22px;
+    gap: 2rem
+    ;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 30px 0;
 }
 
-.fases{
-    text-align: center;
-    margin: 5rem 0 1rem 0;
+
+.producto{
+    font-size: 2rem;
     color: var(--gray-color);
+    margin: 2rem 0;
 }
 
-.fase {
+.servicio{
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    gap: 15px; /* Espacio entre la imagen y el texto */
-    text-align: center;
-    padding: 20px;
-}
-
-.fase__figure {
-    margin: 0;
-}
-
-.fase__image {
-    width: 120px; /* Ajusta el tamaño de la imagen según sea necesario */
-    height: auto;
-}
-
-.center {
-    display: flex;
-    align-items: center;
-}
-
-.fase__title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2C3E50;
-}
-
-/* Metodos: */
-
-
-.metodos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.metodo{
-    display: flex;
-    justify-content: center;
-    width: 60%;
     padding: 10px;
     background: url(../img/rosa.PNG);
     background-size: cover;
-    margin: 3rem 0;
+    width: 90%;
 }
 
-
-.metodo__figure{
-    padding: 10px;
-}
-.metodo__image{
-    width: 300px;
+.servicio__p{
+    font-size: 1.3rem;
+    width: 80%;
 }
 
-.metodo__content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.servicio__content{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.metodo__title{
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--gray-color);
+.servicio__image{
+    width: 200px;
+}
+.servicio__title{
+    margin: 1rem;
 }
 
-.metodo__p{
+.content__title{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.header a{
     font-size: 20px;
 }
-
-
-/* Diseño responsivo */
-@media (max-width: 768px) {
-    .fase {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
 
 .aside__banner{
     background-image: url(../img/rosa.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
-    color: black;
 }
 
 .contact__banner{
@@ -227,17 +160,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .aside__p, .asideBanner__title{
-    color: black;
+    color: var(--gray-color);
     margin-top: 20px;
     font-size: 20px;
 }
 .asideBanner__button{
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid ;
     padding: 10px;
     border-radius: 30px;
     margin-top: 20px;
-    color: black;
+    color: var(--gray-color);
 }
 
 .asideBanner__button:hover{
@@ -331,9 +264,10 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
+
+
+
 /* Media Querys */
-
-
 
 @media screen and (max-width: 568px) { 
     .header{
@@ -347,14 +281,8 @@ h1,h2,h3,h4,h5,h6{
         flex-direction: column;
     }
 
-}
-@media screen and (max-width: 880px) { 
-    
-    .metodo{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+   
+
 }
 @media screen and (max-width: 768px) { 
     .header{
@@ -389,5 +317,10 @@ h1,h2,h3,h4,h5,h6{
         align-items: center;
         gap: 2rem
         ;
+    }
+
+    .servicio{
+        flex-direction: column;
+        align-items: center;
     }
 }
